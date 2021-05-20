@@ -1,0 +1,150 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.category-page.container {
+    max-width: 1890px;
+}
+.category-page {
+    font-family: "Roboto", sans-serif;
+    padding: 20px 20px 116px;
+
+    &__title {
+        padding: 0 140px;
+        font-family: $fonts-Roboto;
+        @include font(52px, $color-title-category-page, 300, 72px, 0);
+        margin-bottom: 17px;
+    }
+
+    &__button {
+        padding: 21px 16px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        background-color: #FF485A;
+        @include font(20px, $color-text-white, 400, 21px, 0);
+
+        .icon {
+            fill: #fff;
+            margin-right: 24px;
+        }
+    }
+}
+
+.category-filters {
+    &__aside {
+        padding: 60px 0 0;
+        max-width: 377px;
+    }
+
+    &__top {
+        margin-bottom: 10px;
+
+        label {
+            margin-right: 16px;
+            opacity: 50%;
+            @include font(14px, $color-header-link, 500, 25px, 0);
+        }
+    }
+
+    .weapon-card {
+       max-width: 435px;
+
+        @media screen and (min-width: 992px) {
+            width: auto;
+        }
+
+        @media screen and (min-width:1920px) {
+            width: 435px;
+        }
+    }
+
+        .weapon {
+         padding: 26px;
+
+            @media screen and (min-width: 1400px) {
+                flex: 0 0 33.3333%;
+                max-width: 33.3333%;
+            }
+        }
+}
+
+.category-filter {
+    padding: 18px 0;
+    border-bottom: 1px solid #DDE8F0;
+
+    &__top {
+        margin-bottom: 26px;
+    }
+
+    &__title {
+        @include font(16px, $color-header-link-active, 700, 19px, 0);
+    }
+    &__path {
+        opacity: 50%;
+
+        &.is-open .icon {
+            transform: rotate(180deg);
+            opacity: 1;
+        }
+    }
+
+    &__input {
+        @include font(16px, $color-header-link-active, 400, 19px, 0);
+        border: none;
+
+        &:checked + label {
+            color: $color-hover-basket;
+
+            &::before {
+                content: url('data:image/svg+xml;charset=utf8,%3Csvg width= "15" height= "12" viewBox= "0 0 15 12" fill= "none" xmlns= "http://www.w3.org/2000/svg" %3E%3Cpath d= "M5.07291 9.87715L13.2745 0.875L14.3573 1.86148L5.14809 11.9696L0.127686 7.19706L1.13705 6.13539L5.07291 9.87715Z" fill= "white" /%3E%3C/svg%3E');
+                background-color: $color-hover-basket;
+                border-color: $color-hover-basket;
+            }
+        }
+    }
+
+    &__label {
+        padding-left: 30px;
+        @include font(16px, $color-header-link-active, 400, 30px, 0);
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2px;
+            border: 1px solid $color-bcg-form;
+        }
+    }
+
+    &__label-price {
+        padding: 4px;
+        border: 1px solid #DDE8F0;
+        border-radius: 10px;
+        margin-right: 8px;
+
+        @media screen and (min-width: 1200px) {
+            padding: 10px 0 10px 10px;
+        }
+    }
+
+    &__price {
+        max-width: 378px;
+    }
+
+    &__range {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        @include font(16px, $color-header-link, 400, 19px, 0);
+    }
+
+    .basket--button {
+        padding: 4px 20px;
+    }
+}

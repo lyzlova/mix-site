@@ -1,0 +1,57 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.cookies {
+    z-index: 11;
+    left: 10%;
+    bottom: 0;
+    width: 80%;
+    padding: 19px 16px 35px;
+
+    border-radius: 10px;
+    background-color: $color-cookies-bcg;
+    border: 1px solid $color-cookies-bcg;
+
+    opacity: 0;
+    transform: translate(0, 100%);
+
+    &__text {
+        font-family: $fonts-Roboto;
+        @include font(14px, $color-text-white, 400, 16px, 0);
+    }
+
+
+    &__button {
+        padding: 20px 20px;
+        border: 1px solid $color-border-cookies-btn;
+        border-radius: 16px 0 16px 0;
+
+        font-family: $fonts-Roboto;
+        @include font(14px, $color-text-white, 500, 17px, 0);
+    }
+}
+
+.cookies--init {
+    animation: cookieShow 0.3s ease forwards;
+}
+
+.cookies--dismissed {
+    opacity: 1;
+    transform: translate(0, 0);
+    animation: cookieHide 0.3s ease forwards;
+}
+
+
+@keyframes cookieShow {
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes cookieHide {
+    100% {
+        opacity: 0;
+        transform: translate(0, 100%);
+    }
+}

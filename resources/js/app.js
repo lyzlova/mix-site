@@ -1,0 +1,17 @@
+require('./bootstrap');
+require('./slider');
+require('./scrollbar');
+require('./cookie');
+require('./scroll-up');
+require('./dropdown-phones-header');
+require('./menu');
+require('./basket-hovering');
+require('./dropdown-catalog-menu');
+require("./lazyLoading");
+require('./fancybox');
+require('./basket');
+require('./select2');
+require('./range-filter');
+require('./range-filter-mobile');
+require('./mobile-filters');
+require('./filter-accordion');

@@ -1,0 +1,155 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.basket {
+    top: 100px;
+    width: 100%;
+    left: 50%;
+    box-shadow: 0 8px 40px rgb(0 0 0 / 32%);
+    z-index: 14;
+
+    max-width: 900px;
+    padding: 20px;
+    background-color: $color-text-white;
+    border-radius: 10px;
+    border: 1px solid $color-text-white;
+    transform: translate(-50%, 0);
+
+    @media screen and (min-width: 992px) {
+        top: 124px;
+        transform: translate(-50%, 0);
+        width: 900px;
+        padding: 42px 40px 40px;
+        left: 50%;
+    }
+
+    &__title {
+        font-family: $fonts-Roboto;
+        @include font(30px, $color-header-link-active, 500, 35px, 0);
+        padding-bottom: 20px;
+    }
+
+    &__body {
+        margin-bottom: 26px;
+    }
+
+    &__icon {
+        fill: #5C6D7D;
+        top: 20px;
+        right: 20px;
+    }
+
+    &__total {
+        padding-top: 36px;
+        border-top: 1px solid $color-basket-item-border;
+
+        .text {
+            top: -10px;
+            right: 0;
+            padding-left: 20px;
+            background-color: $color-text-white;
+            @include font(14px, $color-header-link, 400, 16px, 0);
+        }
+
+        .price {
+            @include font(36px, $color-header-link-active, 700, 42px, 0);
+        }
+    }
+}
+
+.goods {
+    $this: &;
+
+    cursor: pointer;
+    font-family: $fonts-Roboto;
+    padding: 20px 0;
+    border-top: 1px solid $color-basket-item-border;
+
+    &__title {
+        @include font(18px, $color-main-text, 400, 20px, 0);
+        margin-bottom: 7px;
+    }
+
+    &__picture {
+        @media screen and (min-width: 1200px) {
+            margin: 0 20px;
+        }
+    }
+
+    &__price {
+        @include font(16px, $color-main-text, 400, 16px, 0);
+        margin-bottom: 8px;
+
+        .accent-price {
+            @include font(16px, $color-header-link-active, 700, 16px, 0);
+        }
+    }
+
+    &__service {
+        padding: 2px 9px;
+        background-color: $color-bcg-form;
+        border-radius: 4px;
+        @include font(12px, $color-header-link-active, 400, 25px, 0);
+        margin-bottom: 2px;
+
+        .accent-service {
+            font-weight: 500;
+        }
+    }
+
+    .icon-cross {
+        fill: #5C6D7D;
+    }
+
+    &__coast {
+        @include font(16px, $color-header-link-active, 700, 28px, 0);
+
+        @media screen and (min-width: 992px) {
+            font-size: 24px;
+        }
+    }
+
+    &__img {
+        margin: 0 auto;
+        border: 1px solid transparent;
+    }
+
+    &:hover {
+        .icon-cross, .icon-plus, .icon-minus {
+            fill: #33485D;
+        }
+
+        #{$this}__title {
+            color: $color-header-link-active;
+        }
+
+        #{$this}__img {
+            border-radius: 5px;
+            border: 1px solid $color-hover-basket;
+        }
+
+        .counter__count {
+            color: $color-header-link-active;
+        }
+    }
+}
+
+.counter {
+    margin-right: 20px;
+
+    @media screen and (min-width: 992px) {
+        font-size: 28px;
+    }
+
+    &__minus, &__plus {
+        fill: $color-header-link;
+    }
+
+    &__count {
+        padding: 8px 21px;
+        margin: 0 10px;
+        border: 1px solid $color-bcg-form;
+        border-radius: 10px;
+        @include font(18px, $color-header-link, 400, 22px, 0);
+    }
+}

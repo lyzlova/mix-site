@@ -1,0 +1,47 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.faq {
+    z-index: 6;
+    top: 46px;
+    left: 49.4%;
+    transform: translate(-50%, -50%);
+
+    &__title {
+        margin-bottom: 50px;
+
+        font-family: $fonts-Roboto;
+        @include font(16px, $color-faq-title, 400, 24px, 0);
+    }
+
+    &__button {
+        z-index: 10;
+        padding: 21px 16px;
+        background: $color-button-bcg;
+        text-transform: uppercase;
+        border-radius: 70px;
+        @include font(15px, $color-text-white, 400, 18px, 0);
+
+        @media screen and (min-width: 1400px) {
+            padding: 21px 30px 21px 46px;
+        }
+
+        &::before {
+            position: absolute;
+            top: 65%;
+            right: -84px;
+            display: block;
+            width: 122px;
+            height: 120px;
+            z-index: 1;
+            content: "";
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            background: url('data:image/svg+xml;charset=utf8,%3Csvg width="122" height="117" viewBox="0 0 122 117" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M60.2977 1.87343C78.6946 0.796864 99.6024 -1.63216 111.827 12.1926C124.486 26.5086 121.655 47.8062 117.406 66.4573C113.158 85.1042 106.151 104.765 88.8843 112.901C71.7526 120.973 52.1879 113.976 35.477 105.061C19.7789 96.6864 6.15704 84.0639 2.23499 66.6757C-1.67829 49.3263 3.94091 31.0448 15.7974 17.8121C26.8718 5.4522 43.7536 2.84157 60.2977 1.87343Z" stroke="%23FF485A"/%3E%3C/svg%3E') center center no-repeat;
+        }
+    }
+
+    &__icon {
+        margin: -4px 0 0 20px ;
+    }
+}

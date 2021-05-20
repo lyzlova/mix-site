@@ -1,0 +1,59 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.catalog {
+    $this: &;
+
+    z-index: 14;
+    width: 100%;
+    padding: 5px 8px 9px 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    transform: translate3d(0px, 48px, 0px);
+    background-color: $color-text-white;
+
+    @media screen and (min-width: 1920px) {
+        transform: translate3d(0px, 58px, 0px);
+    }
+
+    &__link {
+        padding: 8px 10px;
+        text-align: start;
+        font-family: $fonts-Roboto;
+        @include font(16px, $color-header-link, 500, 21px, 0);
+        text-decoration: none;
+
+        @media screen and (min-width: 1920px) {
+            font-size: 18px;
+        }
+
+        &:hover {
+            background-color: $color-bc-hover-catalog-menu;
+            border-radius: 10px;
+            color: $color-header-link-active;
+
+            #{$this}__icon {
+               fill: $color-header-link-active;
+                opacity: 1;
+           }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 6px;
+        }
+    }
+
+    .icon--catalog {
+        margin-right: 10px;
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 13px;
+        }
+    }
+
+    .icon--path {
+        opacity: 0.5;
+        margin-left: 10px;
+    }
+}

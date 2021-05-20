@@ -1,0 +1,60 @@
+@import '../base/variables';
+@import "../utils/mixins";
+
+.main-nav {
+    &__link {
+        padding: 6px 0;
+
+        font-family: $fonts-Nunito;
+        @include font(14px, $color-header-link-active, 400, 24px, 0);
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            content: '';
+            height: 6px;
+            width: 6px;
+            transform: translate(-50%, -50%);
+            background-color: $color-bcg-form;
+            border-radius: 50%;
+        }
+    }
+
+    &__link.active {
+        position: relative;
+
+        font-family: $fonts-Roboto;
+        @include font(14px, $color-header-link-active, 700, 24px, 0);
+
+        &:before {
+            opacity: 0;
+        }
+
+        &:after {
+            position: absolute;
+            bottom: 3px;
+            left: 0;
+            content: '';
+            width: 100%;
+            border-bottom: 1px solid $color-header-link-active;
+        }
+    }
+}
+
+.mobile-nav {
+    border-top: 1px solid $color-footer-rectangle;
+    padding: 20px 0;
+
+    &__link {
+        padding: 10px 0;
+
+        font-family: $fonts-Roboto;
+        @include font(14px, $color-header-link-active, 700, 17px, 1px);
+    }
+}
+

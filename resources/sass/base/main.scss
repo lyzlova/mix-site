@@ -1,0 +1,80 @@
+@import "./variables";
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+p, button {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+.link-active:hover,
+.link-active:focus,
+.link-active:active {
+    text-decoration: none;
+    outline: none;
+}
+
+.link-active--darken:hover,
+.link-active--darken:focus,
+.link-active--darken:active {
+    color: darken($color-text-white, 20%);
+}
+
+.link-active--header:hover,
+.link-active--header:focus,
+.link-active--header:active {
+    color: red;
+}
+
+button, input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.container {
+    max-width: 1840px;
+    width: 100%;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+label {
+    margin-bottom: 0;
+}

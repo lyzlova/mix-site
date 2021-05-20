@@ -1,0 +1,35 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.header-form {
+    padding: 10px;
+    background-color: $color-bcg-form;
+    border-radius: 10px;
+
+    &__input {
+        width: 90%;
+
+        font-family: $fonts-Roboto;
+        @include font(12px, $color-header-link-active, 400, 19px, 0);
+
+        @media screen and (min-width: 992px) {
+            width: 54%;
+            font-size: 16px;
+        }
+    }
+
+    &__button {
+        .search {
+            fill: $color-header-link-active;
+        }
+
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        padding: 16px;
+    }
+}

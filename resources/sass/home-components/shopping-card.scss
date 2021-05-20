@@ -1,0 +1,42 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.shopping-card {
+    border-top-right-radius: 10px;
+
+    &__count {
+        padding: 2px 10px;
+        top: -10px;
+        right: -12px;
+
+        background-color: $color-bcg-categories;
+        border: 1px solid $color-bcg-categories;
+        border-radius: 18px;
+
+        font-family: $fonts-Roboto;
+        @include font(14px, $color-header-link-active, 700, 17px, 1px);
+
+        @media screen and (min-width: 992px) {
+            right: -6px;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        &:hover {
+            background-color: $color-hover-basket;
+            border: 2px solid $color-hover-basket;
+
+            .count {
+                background-color: $color-text-white;
+                border: 1px solid $color-text-white;
+            }
+
+            .icon {
+                fill: $color-text-white;
+            }
+        }
+    }
+}
+
+
+

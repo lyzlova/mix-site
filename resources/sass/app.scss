@@ -1,0 +1,68 @@
+@import '~bootstrap/scss/bootstrap';
+@import '~normalize.css';
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+@import "~malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css";
+@import "../css/jquery.fancybox.min.css";
+@import "~nouislider/dist/nouislider.min.css";
+@import "~select2/dist/css/select2.min.css";
+
+@import "base/main";
+@import "base/variables";
+@import "base/maps";
+@import "base/visually-hidden";
+@import "base/shadow";
+
+@import "home-components/scrollbar";
+@import "base/slick";
+@import "home-components/scroll-up";
+@import "home-components/cookies";
+
+@import "home-components/button";
+@import "home-components/backdrop";
+
+//header
+@import "home-components/header";
+@import "home-components/dropdown-phones";
+@import "home-components/header-form";
+@import "home-components/menu-button";
+@import "home-components/shopping-card";
+@import "home-components/menu-mobile";
+@import "home-components/nav";
+@import "home-components/catalog-menu";
+@import "home-components/basket-hovering";
+@import "home-components/basket";
+
+//categories
+@import "home-components/categories";
+@import "home-components/categories-header";
+@import "home-components/category";
+
+//seo
+@import "home-components/seo";
+@import "home-components/faq";
+@import "home-components/card";
+
+//weapon-accessories
+@import "home-components/weapon-accessories";
+
+//weapon-card
+@import "home-components/weapon-card";
+
+//footer
+@import "home-components/footer-top";
+@import "home-components/footer-bottom";
+
+
+@import "home-components/fonts";
+
+
+//categories-main
+@import "categories-main/categories-main";
+
+//category-page
+@import "category-page/category-page";
+@import "category-page/range-filter";
+@import "category-page/select2";
+@import "category-page/filter-mobile";
+@import "category-page/pagination";

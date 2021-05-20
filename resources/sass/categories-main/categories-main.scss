@@ -1,0 +1,45 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.categories-main {
+    $this: &;
+
+    background-color: $color-footer-bcg;
+
+    &__content {
+        @media screen and (min-width: 1200px) {
+            padding: 20px 40px;
+        }
+    }
+
+    &__item {
+        padding: 15px;
+        max-width: 270px;
+    }
+
+    &__link {
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid $color-footer-bcg;
+        background-color: $color-text-white;
+
+        &:hover {
+            box-shadow: 0 20px 80px rgb(0 0 0 / 10%);
+
+            #{$this}__text {
+                color: red;
+            }
+        }
+    }
+
+    &__title {
+        color: $color-header-link-active;
+    }
+
+    &__text {
+        font-family: $fonts-Roboto;
+        @include font(18px, $color-header-link-active, 700, 21px, 0);
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+}

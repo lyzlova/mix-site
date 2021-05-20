@@ -1,0 +1,35 @@
+@import "../base/variables";
+
+.categories {
+    z-index: 10;
+    padding: 20px 20px 140px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 0 40px 140px;
+    }
+
+    &__content {
+        border-radius: 22px;
+        background: url('../../images/top-bg.jpg');
+        background-size: cover;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background: url("../../images/top-bg@2x.jpg") no-repeat 100%;
+            background-size: cover;
+        }
+    }
+
+    &__list {
+        padding: 48px 13px 100px;
+
+        @media screen and (min-width: 1200px) {
+            padding: 47px 158px 78px 158px;
+        }
+    }
+}
+
+
+
+

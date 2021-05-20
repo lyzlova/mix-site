@@ -1,0 +1,54 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: $color-hover-basket;
+    color: $color-text-white;
+}
+
+.select2-container .select2-selection--single {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #DDE8F0;
+    border-radius: 10px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 28px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 20%;
+    opacity: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg width="10" height="6" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M9.81 1.086a.63.63 0 000-.9.653.653 0 00-.913 0l-3.42 3.369L2.057.186a.653.653 0 00-.915 0 .63.63 0 000 .9L5.02 4.905a.653.653 0 00.914 0L9.81 1.086z" /%3E%3C/svg%3E');
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    display: none;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder{
+    @include font(18px, $color-header-link-active, 400, 30px, 0);
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow {
+    transform: rotate(180deg);
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    @include font(18px, $color-header-link-active, 400, 30px, 0);
+}

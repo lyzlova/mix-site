@@ -1,0 +1,36 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.noUi-target {
+    background-color: $color-bcg-form;
+    box-shadow: none;
+    height: 2px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto;
+    width: 93%;
+}
+
+.noUi-handle {
+    box-shadow: none;
+    border: 2px solid $color-hover-basket;
+    border-radius: 100%;
+    background: $color-text-white;
+}
+
+.noUi-handle::before,
+.noUi-handle::after {
+    display: none;
+}
+
+.noUi-horizontal .noUi-handle{
+    height: 30px;
+    width: 30px;
+    top: -14px;
+}
+
+.noUi-horizontal .noUi-handle-upper:last-child {
+    background-color: $color-hover-basket;
+    border: 1px solid $color-hover-basket;
+    z-index: 99;
+}

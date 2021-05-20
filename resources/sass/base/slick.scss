@@ -1,0 +1,19 @@
+.slick-list {
+    overflow: visible;
+}
+
+.slick-slide{
+    width: 311px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &:nth-child(even)  {
+        margin-top: 30px;
+    }
+
+    @media screen and (max-width: 576px) {
+       margin: 0 auto;
+    }
+}

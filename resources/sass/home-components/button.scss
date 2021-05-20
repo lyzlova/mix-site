@@ -1,0 +1,58 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.button {
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid $color-text-white;
+
+    font-family: $fonts-Roboto;
+    @include font(15px, $color-text-white, 700, 17.58px, 0);
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+    }
+}
+
+.button--scale {
+    @media screen and (min-width: 1024px) {
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.button-path {
+    width: 20px;
+    height: 20px;
+}
+
+.basket--button {
+    padding: 15px 20px;
+    background-color: $color-text-white;
+    border: 2px solid $color-bcg-categories;
+
+    @include font(14px, $color-header-link-active, 500, 17px, 0);
+
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    @media screen and (min-width: 1024px) {
+        @include font(24px, $color-header-link-active, 500, 29px, 0);
+    }
+
+    .icon {
+        margin-left: 16px;
+    }
+
+    &:hover {
+        background-color: $color-hover-basket;
+        border: 2px solid $color-hover-basket;
+        color:  $color-text-white;
+
+        .icon {
+            fill: $color-text-white;
+        }
+    }
+}

@@ -1,0 +1,164 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.header {
+    $this: &;
+
+    padding: 16px 20px 30px;
+
+    @media screen and (min-width: 1920px) {
+        padding: 16px 160px 24px 160px;
+    }
+
+    &__logo {
+        .logo {
+            width: 50px;
+            height: 41px;
+            fill: #34495E;
+
+            @media screen and (min-width: 768px) {
+                width: 80px;
+            }
+
+            @media screen and (min-width: 1920px) {
+                width: 114px;
+            }
+        }
+    }
+}
+
+.header-content {
+    &__header {
+        padding: 12px 10px;
+        background-color: $color-bcg-categories;
+        border-top-left-radius: 10px;
+
+        @media screen and (min-width: 1920px) {
+            padding: 12px 38px 18px 20px;
+        }
+    }
+
+    &__catalog {
+        font-family: $fonts-Roboto;
+        @include font(16px, $color-text-white, 500, 18px, 1px);
+
+        @media screen and (min-width: 1920px) {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        .icon {
+            margin-right: 12px;
+            stroke: $color-text-white;
+        }
+    }
+
+    &__categories {
+        position: relative;
+
+        font-family: $fonts-Roboto;
+        @include font(14px, $color-text-white, 400, 24px, 0);
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            bottom: 0;
+            border-bottom: 1px solid $color-text-white;
+        }
+
+        &:hover {
+            &:before {
+                border-bottom-color: red;
+            }
+        }
+    }
+}
+
+.header-column-menu {
+    padding: 0 14px 0;
+
+    @media screen and (min-width: 1920px) {
+        padding: 0 56px 0 44px;
+    }
+
+}
+
+.header-actions {
+    &__wishing {
+        button {
+            @media screen and (min-width: 992px) {
+                padding: 10px;
+                border: 2px solid #FFCB6D;
+            }
+
+            @media screen and (min-width: 1200px) {
+                padding: 10px;
+            }
+
+            @media screen and (min-width: 1920px) {
+                padding: 15px 20px;
+            }
+
+            &:nth-child(2) {
+                border-left: 0;
+                border-right: 0;
+            }
+
+            &:hover,
+            &:focus {
+                .icon {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+.lang-header {
+    &__link {
+        padding: 6px 0;
+
+        font-family: $fonts-Roboto;
+        @include font(14px, $color-header-link-active, 700, 17px, 1px);
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: -14px;
+            height: 6px;
+            width: 6px;
+            content: '';
+            transform: translate(-50%, -50%);
+            background-color: $color-bcg-form;
+            border-radius: 50%;
+        }
+
+        &.active {
+            &:before {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.user {
+    padding: 6px 0;
+
+    a {
+        color: $color-header-link-active;
+    }
+
+    &__button {
+        font-family: $fonts-Roboto;
+        @include font(14px, $color-header-link-active, 700, 17px, 0);
+    }
+
+    .icon {
+        margin-left: 12px;
+    }
+}

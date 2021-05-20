@@ -1,0 +1,45 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.pagination {
+    width: 350px;
+
+    &__step {
+        &--left {
+            transform: rotate(-90deg);
+        }
+
+        &--right {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__list {
+        margin: 0 20px;
+    }
+
+    &__link {
+        height: 40px;
+        width: 40px;
+
+        border: 1px solid $color-bcg-form;
+        border-radius: 10px;
+        @include font(18px, $color-header-link, 400, 22px, 0);
+
+        &.active {
+            border-color: $color-hover-basket;
+            color: $color-header-link-active;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $color-hover-basket;
+            color: $color-header-link-active;
+        }
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}

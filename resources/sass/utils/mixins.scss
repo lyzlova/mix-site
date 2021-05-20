@@ -1,0 +1,23 @@
+@mixin font(
+    $size: false,
+    $color: false,
+    $weight: false,
+    $lh: false,
+    $letter-spacing: false
+) {
+    @if $size {
+        font-size: $size;
+    }
+    @if $color {
+        color: $color;
+    }
+    @if $weight {
+        font-weight: $weight;
+    }
+    @if $lh {
+        line-height: $lh;
+    }
+    @if $letter-spacing {
+        letter-spacing: $letter-spacing;
+    }
+}

@@ -1,0 +1,20 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.scroll-up {
+    font-family: $fonts-Roboto;
+    @include font(12px, $color-scroll-up-bcg, 500, 14px, 0);
+
+    &__button {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+        background-color: $color-scroll-up-bcg;
+        border-radius: 100%;
+        border: 1px solid $color-scroll-up-bcg;
+    }
+
+    @media screen and (max-width: 991px) {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,22 @@
+$label-colors: (
+    green: #219653,
+    blue: #2F80ED,
+    red: #E02020,
+    yellow: #FF8A00,
+);
+
+.label--green {
+    background-color: map-get($label-colors, green);
+}
+
+.label--blue {
+    background-color: map-get($label-colors, blue);
+}
+
+.label--red {
+    background-color: map-get($label-colors, red);
+}
+
+.label--yellow {
+    background-color: map-get($label-colors, yellow);
+}

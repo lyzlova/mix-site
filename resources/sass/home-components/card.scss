@@ -1,0 +1,49 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.cards {
+    padding: 0 30px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 0 144px;
+    }
+}
+
+.card {
+    padding: 32px 49px 28px 32px;
+    background: $color-text-white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+
+    font-family: $fonts-Roboto;
+    @include font(18px, $color-faq-title, 400, 24px, 0);
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__time {
+        font-size: 16px;
+
+        .icon {
+            margin-right: 6px;
+            fill: none;
+            stroke: #6a677b;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        background: $color-product-bcg;
+        color: $color-text-white;
+
+        & > div {
+            color: $color-text-white;
+        }
+
+        &  svg {
+            stroke: #fff;
+            fill: none;
+        }
+    }
+}

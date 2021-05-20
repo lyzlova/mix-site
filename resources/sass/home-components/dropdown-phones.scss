@@ -1,0 +1,27 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.dropdown-phones {
+    .icon-path {
+        fill: $color-border-cookies-btn;
+    }
+
+    &__toggle.active {
+        .icon {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__menu {
+        z-index: 4;
+        transform: translate3d(0px, 34px, 0px);
+        background-color: $color-text-white;
+    }
+
+    a {
+        padding: 12px;
+
+        font-family: $fonts-Roboto;
+        @include font(14px, $color-header-link-active, 700, 17px, 0);
+    }
+}

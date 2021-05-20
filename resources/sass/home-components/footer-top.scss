@@ -1,0 +1,83 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.footer {
+    background-color: $color-bcg-footer;
+    padding: 70px 20px 0;
+
+    .logo {
+        fill: $color-text-white;
+    }
+
+    @media screen and (min-width: 1400px) {
+        padding: 0 52px 0 244px;
+    }
+}
+
+.footer-top {
+    padding: 58px 0 32px 0;
+
+    .social {
+        margin: 40px 0;
+        width: 176px;
+    }
+}
+
+.column-logo {
+    a:hover,
+    a:focus {
+        transform: scale(1.1);
+    }
+}
+
+.payment-delivery {
+    justify-content: space-between;
+    opacity: 0.5;
+
+    @media screen and (min-width: 1920px) {
+        justify-content: flex-start;
+    }
+
+    &__link {
+        @media screen and (max-width: 991px) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 1920px) {
+            margin-right: 60px;
+        }
+    }
+}
+
+
+.payment {
+    &__link:not(:last-child) {
+        margin-right: 6px;
+    }
+}
+
+.column-about {
+    &__link {
+        opacity: 0.5;
+
+        font-family: $fonts-Roboto;
+        @include font(14px, $color-text-white, 400, 18px, 0);
+    }
+}
+
+.hotline {
+    &__link {
+        opacity: 0.7;
+
+        font-family: $fonts-Roboto;
+        @include font(18px, $color-text-white, 500, 21px, 0);
+
+        &:first-child {
+            @media screen and (min-width: 992px) {
+                margin-bottom: 12px;
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+    }
+}

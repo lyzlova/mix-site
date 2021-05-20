@@ -1,0 +1,32 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.title {
+    font-size: 30px;
+    line-height: 36px;
+    color: $color-text-white;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 64px;
+        line-height: 72px;
+    }
+}
+
+.footer-title {
+    margin-bottom: 14px;
+
+    font-family: $fonts-Roboto;
+    @include font(18px, $color-text-white, 500, 21px, 0);
+}
+
+div {
+    @media screen and (max-width: 1024px) {
+        font-size: 12px;
+    }
+}
+
+ a {
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+    }
+}

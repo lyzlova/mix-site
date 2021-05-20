@@ -1,0 +1,44 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.categories-header {
+    padding: 84px 30px 40px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 82px 154px 40px 159px;
+    }
+
+    &__title {
+        margin-top: -4px;
+        font-family: $fonts-Roboto;
+
+        @include font(64px, $color-text-white, 300, 72px, 0);
+
+        @media screen and (max-width: 576px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__button {
+        padding: 22px 28px 18px 34px;
+        min-width: 188px;
+        color: $color-text-white;
+        background-color: inherit;
+        border-radius: 70px;
+
+        text-transform: uppercase;
+        @include font(15px, $color-text-white, 400, 18px, 0);
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+            outline: none;
+            color: $color-text-white;
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,13 @@
+@import "../base/variables";
+@import "../utils/mixins";
+
+.footer-bottom {
+    &__content {
+        padding: 30px 0 33px;
+        opacity: 0.5;
+        border-top: 2px solid $color-footer-rectangle;
+
+        font-family: $fonts-Nunito;
+        @include font(14px, $color-text-white, 400, 18px, 0);
+    }
+}
