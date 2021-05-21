@@ -5,6 +5,8 @@ const images = document.querySelectorAll('[data-fancybox]');
 
 if(images) {
     $(images).fancybox({
-        animationEffect: 'slide'
+        beforeClose: function(){
+            $(".slick-list").css({'overflow-x':'hidden'});
+        },
     });
 }

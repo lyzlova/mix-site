@@ -11937,6 +11937,10 @@ label {
   box-shadow: 0 10px 80px rgba(0, 0, 0, 0.3);
 }
 
+.fancybox-image, .fancybox-spaceball {
+  border-radius: 44px;
+}
+
 .weapons__content {
   width: 100%;
   overflow-x: auto;
