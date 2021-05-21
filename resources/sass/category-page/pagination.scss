@@ -2,7 +2,7 @@
 @import "../utils/mixins";
 
 .pagination {
-    width: 350px;
+    max-width: 350px;
 
     &__step {
         &--left {
@@ -14,13 +14,10 @@
         }
     }
 
-    &__list {
-        margin: 0 20px;
-    }
-
     &__link {
         height: 40px;
         width: 40px;
+        margin: 0 10px;
 
         border: 1px solid $color-bcg-form;
         border-radius: 10px;
@@ -38,8 +35,8 @@
             color: $color-header-link-active;
         }
 
-        &:not(:last-child) {
-            margin-right: 20px;
+        @media screen and (min-width: 1400px) {
+            margin: 0 20px;
         }
     }
 }

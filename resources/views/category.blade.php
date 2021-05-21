@@ -402,7 +402,7 @@ $basket = [
                 </div>
                 <div class="category-filter__body">
                     <label for="model-control" class="visually-hidden">Модель</label>
-                    <select name="page" id="model-control-mobile" class="w-100">
+                    <select name="page" id="model-control-mobile">
                         <option value="Leon">Leon</option>
                         <option value="Forse">Forse</option>
                         <option value="Narva">Narva</option>
@@ -416,7 +416,7 @@ $basket = [
                 </div>
                 <div class="category-filter__body">
                     <label for="year-control-mobile" class="visually-hidden">Год выпуска</label>
-                    <select name="page" id="year-control-mobile" class="w-100">
+                    <select name="page" id="year-control-mobile">
                         <option value="Все">Все</option>
                         <option value="2018">2018</option>
                         <option value="2019">2019</option>

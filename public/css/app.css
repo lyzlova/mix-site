@@ -12416,6 +12416,11 @@ label {
     right: -6px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .shopping-card__count {
+    right: -16px;
+  }
+}
 @media screen and (min-width: 992px) {
   .shopping-card:hover {
     background-color: #47B39C;
@@ -13227,7 +13232,7 @@ label {
 }
 @media screen and (max-width: 575px) {
   .weapon-card {
-    width: 309px;
+    width: 280px;
   }
 }
 .weapon-card__heading {
@@ -13515,17 +13520,31 @@ label {
 
 .category-page {
   font-family: "Roboto", sans-serif;
-  padding: 20px 20px 116px;
+  padding: 20px 10px 116px;
 }
 .category-page__title {
-  padding: 0 140px;
+  padding: 0 10px;
   font-family: "Roboto", sans-serif;
-  font-size: 52px;
+  font-size: 32px;
   color: #000000;
   font-weight: 300;
-  line-height: 72px;
+  line-height: 40px;
   letter-spacing: 0;
   margin-bottom: 17px;
+}
+@media screen and (min-width: 1920px) {
+  .category-page__title {
+    font-size: 52px;
+    color: #000000;
+    font-weight: 300;
+    line-height: 72px;
+    letter-spacing: 0;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .category-page__title {
+    padding: 0 140px;
+  }
 }
 .category-page__button {
   padding: 21px 16px;
@@ -13743,11 +13762,20 @@ label {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
-  font-size: 18px;
+  font-size: 14px;
   color: #33485D;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 18px;
   letter-spacing: 0;
+}
+@media screen and (min-width: 1920px) {
+  .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    font-size: 18px;
+    color: #33485D;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
 }
 
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow {
@@ -13755,25 +13783,38 @@ label {
 }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
-  font-size: 18px;
+  font-size: 14px;
   color: #33485D;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 18px;
   letter-spacing: 0;
+}
+@media screen and (min-width: 1920px) {
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    font-size: 18px;
+    color: #33485D;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
 }
 
 .filters-mobile {
   top: 0;
-  width: 100%;
   left: 0;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.32);
-  z-index: 14;
-  max-width: 380px;
+  width: 100%;
+  height: 100%;
   padding: 20px;
+  z-index: 14;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.32);
   background-color: #fff;
   border: 1px solid #fff;
-  height: 100%;
   overflow-y: scroll;
+}
+@media screen and (min-width: 375px) {
+  .filters-mobile {
+    width: 375px;
+  }
 }
 .filters-mobile__close {
   top: 8px;
@@ -13781,7 +13822,7 @@ label {
 }
 
 .pagination {
-  width: 350px;
+  max-width: 350px;
 }
 .pagination__step--left {
   transform: rotate(-90deg);
@@ -13789,12 +13830,10 @@ label {
 .pagination__step--right {
   transform: rotate(90deg);
 }
-.pagination__list {
-  margin: 0 20px;
-}
 .pagination__link {
   height: 40px;
   width: 40px;
+  margin: 0 10px;
   border: 1px solid #DDE8F0;
   border-radius: 10px;
   font-size: 18px;
@@ -13811,6 +13850,8 @@ label {
   border-color: #47B39C;
   color: #33485D;
 }
-.pagination__link:not(:last-child) {
-  margin-right: 20px;
+@media screen and (min-width: 1400px) {
+  .pagination__link {
+    margin: 0 20px;
+  }
 }
