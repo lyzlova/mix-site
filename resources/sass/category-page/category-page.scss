@@ -86,6 +86,7 @@
     &__title {
         @include font(16px, $color-header-link-active, 700, 19px, 0);
     }
+
     &__path {
         opacity: 50%;
 

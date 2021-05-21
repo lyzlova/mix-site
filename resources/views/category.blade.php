@@ -135,12 +135,12 @@ $basket = [
                     </div>
                     <div class="category-filter__body visually-hidden" data-select-body>
                         <div class="category-filter__items d-flex flex-column" role="group">
-                            <div href="#"
-                                 class="category-filter__link d-flex flex-row align-items-center link-active">
+                            <a href="#"
+                               class="category-filter__link d-flex flex-row align-items-center link-active">
                                 <input type="checkbox" class="category-filter__input" name="brand" value="Jrone"
                                        id="Jrone">
                                 <label class="category-filter__label position-relative" for="Jrone">Jrone</label>
-                            </div>
+                            </a>
                             <a href="#"
                                class="category-filter__link d-flex flex-row align-items-center link-active">
                                 <input type="checkbox" class="category-filter__input" name="brand" value="Turbo"
@@ -149,9 +149,9 @@ $basket = [
                             </a>
                             <a href="#"
                                class="category-filter__link d-flex flex-row align-items-center link-active">
-                                <input type="checkbox" class="category-filter__input" name="brand" value="E&amp;E"
-                                       id="E&amp;E">
-                                <label class="category-filter__label position-relative" for="E&amp;E"> E &amp;
+                                <input type="checkbox" class="category-filter__input" name="brand" value="E&E"
+                                       id="E&E">
+                                <label class="category-filter__label position-relative" for="E&E"> E &amp;
                                     E</label>
                             </a>
                             <a href="#"
@@ -333,11 +333,16 @@ $basket = [
                         </svg>
                     </a>
                     <div class="pagination__list d-flex flex-row align-items-center mx-0 justify-content-between">
-                        <a href="" class="pagination__link d-flex align-items-center justify-content-center link-active">1</a>
-                        <a href="" class="pagination__link d-flex align-items-center justify-content-center link-active active">2</a>
-                        <a href="" class="pagination__link d-flex align-items-center justify-content-center link-active">3</a>
-                        <a href="" class="pagination__link d-flex align-items-center justify-content-center link-active">4</a>
-                        <a href="" class="pagination__link d-flex align-items-center justify-content-center link-active">5</a>
+                        <a href=""
+                           class="pagination__link d-flex align-items-center justify-content-center link-active">1</a>
+                        <a href=""
+                           class="pagination__link d-flex align-items-center justify-content-center link-active active">2</a>
+                        <a href=""
+                           class="pagination__link d-flex align-items-center justify-content-center link-active">3</a>
+                        <a href=""
+                           class="pagination__link d-flex align-items-center justify-content-center link-active">4</a>
+                        <a href=""
+                           class="pagination__link d-flex align-items-center justify-content-center link-active">5</a>
                     </div>
                     <a href="#" class="pagination__step pagination__step--right">
                         <svg class="pagination__icon icon" width="15" height="28">
@@ -368,12 +373,12 @@ $basket = [
                 </div>
                 <div class="category-filter__body visually-hidden" data-select-body>
                     <div class="category-filter__items d-flex flex-column" role="group">
-                        <div href="#"
-                             class="category-filter__link d-flex flex-row align-items-center link-active">
+                        <a href="#"
+                           class="category-filter__link d-flex flex-row align-items-center link-active">
                             <input type="checkbox" class="category-filter__input" name="brand" value="Jrone"
-                                   id="Jrone">
-                            <label class="category-filter__label position-relative" for="Jrone">Jrone</label>
-                        </div>
+                                   id="Jron">
+                            <label class="category-filter__label position-relative" for="Jron">Jrone</label>
+                        </a>
                         <a href="#"
                            class="category-filter__link d-flex flex-row align-items-center link-active">
                             <input type="checkbox" class="category-filter__input" name="brand" value="Turbo"
@@ -382,9 +387,9 @@ $basket = [
                         </a>
                         <a href="#"
                            class="category-filter__link d-flex flex-row align-items-center link-active">
-                            <input type="checkbox" class="category-filter__input" name="brand" value="E&amp;E"
-                                   id="E&amp;E">
-                            <label class="category-filter__label position-relative" for="E&amp;E"> E &amp;
+                            <input type="checkbox" class="category-filter__input" name="brand" value="E&E"
+                                   id="E&E">
+                            <label class="category-filter__label position-relative" for="E&E"> E &amp;
                                 E</label>
                         </a>
                         <a href="#"

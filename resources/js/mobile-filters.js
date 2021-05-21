@@ -15,7 +15,7 @@ function onEscKeyPress(e){
     }
 }
 
-if (refs.openFilter || refs.closeFilter) {
+if (refs.openFilter && refs.closeFilter) {
     refs.openFilter.addEventListener('click', (e) => {
         e.preventDefault();
         onCloseMobileFilter();
@@ -31,12 +31,9 @@ if (refs.openFilter || refs.closeFilter) {
 
 if (refs.filterBackdrop) {
     refs.filterBackdrop.addEventListener('click', (e) => {
-        e.preventDefault();
-
         if (e.target === e.currentTarget) {
             onCloseMobileFilter();
+            window.removeEventListener('keydown', onEscKeyPress);
         }
-
-        window.removeEventListener('keydown', onEscKeyPress);
     });
 }
