@@ -196,19 +196,19 @@
             </div>
             <div class="menu-mobile__body">
                 <div class="menu-mobile__list d-flex flex-column align-items-start">
-                    <button type="button" class="link-active link-active--header">
+                    <button type="button" class="d-flex flex-row align-items-center link-active link-active--header">
                         <svg class="icon d-inline-block" width="30" height="30">
                             <use href="./images/sprite.svg#icon-balance"></use>
                         </svg>
                         Сравнить
                     </button>
-                    <button type="button" class="link-active link-active--header">
+                    <button type="button" class="d-flex flex-row align-items-center link-active link-active--header">
                         <svg class="icon d-inline-block" width="30" height="30">
                             <use href="./images/sprite.svg#icon-heart"></use>
                         </svg>
                         Список желаний
                     </button>
-                    <button type="button" class="shopping-card link-active d-flex flex-row justify-content-between link-active--header" data-shopping-card>
+                    <button type="button" class="d-flex flex-row align-items-center shopping-card link-active link-active--header" data-shopping-card>
                         <div class="position-relative">
                             <svg class="shopping-card__icon icon d-inline-block" width="30" height="30">
                                 <use href="./images/sprite.svg#icon-shopping-cart"></use>
@@ -217,7 +217,7 @@
                         </div>
                         Корзина
                     </button>
-                    <a href="tel:+380680000000" class="d-inline-block link-active link-active--header">
+                    <a href="tel:+380680000000" class="d-flex flex-row align-items-center d-inline-block link-active link-active--header">
                         <svg class="icon d-inline-block" width="30" height="30">
                             <use href="./images/sprite.svg#icon-telephone"></use>
                         </svg>
