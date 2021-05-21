@@ -4,6 +4,7 @@
 @import "~slick-carousel/slick/slick-theme.scss";
 @import "~malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css";
 @import "../css/jquery.fancybox.min.css";
+@import "~lightbox2/dist/css/lightbox.min.css";
 @import "~nouislider/dist/nouislider.min.css";
 @import "~select2/dist/css/select2.min.css";
 
@@ -12,7 +13,7 @@
 @import "base/maps";
 @import "base/visually-hidden";
 @import "base/shadow";
-@import "base/fancy-box";
+@import "base/ligth-box";
 
 @import "home-components/scrollbar";
 @import "base/slick";

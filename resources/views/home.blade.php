@@ -90,8 +90,8 @@ $basket = [
                 </header>
                 <div class="categories__list row justify-content-between mx-0">
                     @foreach($arrayCategories as $category)
-                        <a href="{{asset($category['image'])}}" class="categories__item category col px-0"
-                           data-fancybox="gallery">
+                        <a href="{{asset($category['image'])}}" data-lightbox="roadtrip" class="fancybox-img categories__item category col px-0"
+                           >
                             <div class="category__picture d-block position-relative">
                                 <picture>
                                     <source srcset="{{asset($category['image'])}}">
